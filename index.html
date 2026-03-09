@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick & Morty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Personajes de Rick & Morty</h1>
+    <span>Personajes de la serie</span>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Buscar personaje..." />
+    <select id="status">
+      <option value="">Todos los estados</option>
+      <option value="alive">Vivo</option>
+      <option value="dead">Muerto</option>
+      <option value="unknown">Desconocido</option>
+    </select>
+    <button id="searchBtn">Buscar</button>
+  </div>
+
+  <p class="info-bar" id="info"></p>
+
+  <div id="loading">Cargando...</div>
+  <div id="grid"></div>
+
+  <div id="pagination">
+    <button id="prev">← Anterior</button>
+    <span id="pageInfo"></span>
+    <button id="next">Siguiente →</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
